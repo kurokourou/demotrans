@@ -54,7 +54,7 @@ _IN_COREBOOSTER_TEST_DATASETS = [[
 ]]
 
 @registry.register_problem
-class CoreBoosting_OutBias(translate.TranslateProblem):
+class CoreBoostingOutBias(translate.TranslateProblem):
   """ Vietnamese Sentence Sharpener"""
   
   @property
@@ -73,7 +73,7 @@ class CoreBoosting_OutBias(translate.TranslateProblem):
 
 #Fixing
 @registry.register_problem
-class CoreBoosting_OutBalance(translate.TranslateProblem):
+class CoreBoostingOutBalance(translate.TranslateProblem):
   """ Vietnamese Sentence Sharpener"""
   
   @property
@@ -92,7 +92,7 @@ class CoreBoosting_OutBalance(translate.TranslateProblem):
 
 #Fixing
 @registry.register_problem
-class CoreBoosting_In(translate.TranslateProblem):
+class CoreBoostingIn(translate.TranslateProblem):
   """ Vietnamese Sentence Sharpener"""
   
   @property
