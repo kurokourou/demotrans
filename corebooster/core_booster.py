@@ -16,30 +16,30 @@ EOS = text_encoder.EOS_ID
 # Core sentence extracted from EVBNews 2.0, a part of EVBCorpus
 # https://github.com/qhungngo/EVBCorpus # Done
 _OUT_BIAS_COREBOOSTER_TRAIN_DATASETS = [[ 
-    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_bias/corebooster_train.tar.gz",  
+    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_bias/corebooster_ci_bi_train.tar.gz",  
     ("EVBNews_2_0_corebooster.input", "EVBNews_2_0_corebooster.output")
 ]]
 
 # 5105 sentence pairs used for test
 _OUT_BIAS_COREBOOSTER_TEST_DATASETS = [[ 
-    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_bias/corebooster_test.tar.gz",  
+    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_bias/corebooster_ci_bi_test.tar.gz",  
     ("corebooster_test.input", "corebooster_test.output")
 ]]
 
-  # 40k sentence pairs # Fixing
-  # English core sentence extracted from EVBNews 2.0, a part of EVBCorpus
-  # https://github.com/qhungngo/EVBCorpus
-  # Core Translate by Core2core_base
-# _OUT_BALANCE_COREBOOSTER_TRAIN_DATASETS = [[ # Fix
-#     "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/corebooster_train.tar.gz",  
-#     ("EVBNews_2_0_corebooster.input", "EVBNews_2_0_corebooster.output")
-# ]]
+# 40k sentence pairs # Done
+# English core sentence extracted from EVBNews 2.0, a part of EVBCorpus
+# https://github.com/qhungngo/EVBCorpus
+# Core Translate by Core2core_base
+_OUT_BALANCE_COREBOOSTER_TRAIN_DATASETS = [[ # Fix
+    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_balance/corebooster_ci_ba_train.tar.gz",  
+    ("corebooster_ci_ba.input", "corebooster_ci_ba.output")
+]]
 
-# # 5105 sentence pairs used for test
-# _OUT_BALANCE_COREBOOSTER_TEST_DATASETS = [[ # Fix
-#     "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/corebooster_test.tar.gz",  
-#     ("corebooster_test.input", "corebooster_test.output")
-# ]]
+# 5105 sentence pairs used for test
+_OUT_BALANCE_COREBOOSTER_TEST_DATASETS = [[ # Fix
+    "https://github.com/kurokourou/demotrans/raw/master/data/corebooster/out_ci_balance/corebooster_ci_ba_test.tar.gz",  
+    ("corebooster_ci_ba_test.input", "corebooster_ci_ba_test.output")
+]]
 
 # Translate IWLST32 with core sentence intergrated input # Done
 _IN_COREBOOSTER_TRAIN_DATASETS = [[ 
